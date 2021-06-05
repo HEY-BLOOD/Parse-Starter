@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Parse Starter</string>
+
+    <!-- TODO: Change the following strings as required -->
+    <string name="back4app_server_url">PASTE_YOUR_BACK4APP_SUBDOMAIN</string>
+    <string name="back4app_app_id">PASTE_YOUR_APPLICATION_ID_HERE</string>
+    <string name="back4app_client_key">PASTE_YOUR_CLIENT_KEY_HERE</string>
+</resources>
