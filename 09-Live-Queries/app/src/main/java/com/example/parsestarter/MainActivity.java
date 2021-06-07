@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             SubscriptionHandling<ParseObject> subscriptionHandling = parseLiveQueryClient.subscribe(parseQuery);
 
             subscriptionHandling.handleEvent(SubscriptionHandling.Event.CREATE, (query, object) -> {
-                // HANDLING create event
+                // handling CREATE event
                 Handler handler = new Handler(Looper.getMainLooper());
                 handler.post(() -> {
                     runOnUiThread(() -> appendMessage(object));
@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
      * @param object The least Message Object
      */
     private void appendMessage(ParseObject object) {
+        Log.d(TAG, "Add object " + object.getString(MESSAGE_CONTENT_KEY));
         if (isMessageEmpty) {
             messageListContainer.removeAllViews();
             isMessageEmpty = false;
