@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         ParseLiveQueryClient parseLiveQueryClient = null;
         try {
             parseLiveQueryClient = ParseLiveQueryClient.Factory
-                    .getClient(new URI(getString(R.string.back4app_server_url)));
+                    .getClient(new URI(getString(R.string.parse_server_url)));
         } catch (URISyntaxException e) {
             Log.e(TAG, e.toString());
         }
